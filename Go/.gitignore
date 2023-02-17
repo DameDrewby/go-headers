@@ -1,0 +1,11 @@
+/bin
+/pkg
+/src/test/dummy
+notes.md
+_debug_bin.exe
+*.mod
+*.dccache
+*.pdf
+*.json
+*.key
+*.crt
