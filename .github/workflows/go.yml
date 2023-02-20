@@ -28,7 +28,6 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: ${{ matrix.goos }}
         goarch: ${{ matrix.goarch }}
-        release_tag: "10"
         overwrite: true
         project_path: "./Go"
         binary_name: "headers$_{{ matrix.goos }}_${{ matrix.goarch }}"
