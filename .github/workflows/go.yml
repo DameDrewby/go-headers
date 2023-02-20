@@ -9,8 +9,6 @@ on:
   pull_request:
     branches: [ "main" ]
 
-permissions: read-all|write-all
-
 jobs:
   Build Release:
     name: Release Go Binary
@@ -25,6 +23,8 @@ jobs:
             goos: darwin
           - goarch: arm64
             goos: windows
+    permissions:
+      contents: write
     steps:
     - uses: actions/checkout@v3
     - uses: wangyoucao577/go-release-action@v1.35
