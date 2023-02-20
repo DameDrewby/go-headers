@@ -30,7 +30,7 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         goos: ${{ matrix.goos }}
         goarch: ${{ matrix.goarch }}
-        project_path: "./Go/src/"
+        project_path: "../../Go/src/"
         binary_name: "headers$_{{ matrix.goos }}_${{ matrix.goarch }}"
 
 
