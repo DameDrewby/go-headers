@@ -9,6 +9,7 @@ on:
 
 jobs:
   build-releases:
+    permissions: write-all
     name: Release Go Binary
     runs-on: ubuntu-latest
     strategy:
